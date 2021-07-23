@@ -54,7 +54,7 @@ int	main(void)
 	char	*var;
 
 	var = "Hello World";
-	ft_printf("%s\n", var);
+	ft_printf("Print this: %s\n", var);
 	return (0);
 }
 ```
