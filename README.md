@@ -33,7 +33,7 @@ Topics such as variadic functions and data types manipulation were addressed.
 The `gcc` compiler is needed.
 
 #### ⚙️ Installing
-To compile the code, clone the repo, and run the commad `make`.
+To compile the code, clone the repo, and run the command `make`.
 ```
 $ git clone https://github.com/filipebafica/ft_printf.git
 $ cd ft_printf
