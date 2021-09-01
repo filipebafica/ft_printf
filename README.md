@@ -30,7 +30,7 @@ This project is part of 42 École/ 42 SP curriculum.\
 Topics such as variadic functions and data types manipulation were addressed.
 
 ## 🏁 Getting Started
-A C compiler such as `gcc` or `clang` is needed.
+`gcc` compiler is needed.
 
 #### ⚙️ Installing
 To compile the code, clone the repo, and run the commad `make`.
