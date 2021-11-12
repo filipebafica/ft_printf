@@ -6,12 +6,11 @@
 /*   By: fbafica <fbafica@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/16 19:51:56 by fbafica           #+#    #+#             */
-/*   Updated: 2021/07/20 23:07:06 by fbafica          ###   ########.fr       */
+/*   Updated: 2021/11/12 14:22:05 by fbafica          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "ft_printf.h"
 
 int	handle_s(char *s)
 {

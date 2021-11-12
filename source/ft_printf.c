@@ -6,11 +6,10 @@
 /*   By: fbafica <fbafica@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/16 15:06:55 by fbafica           #+#    #+#             */
-/*   Updated: 2021/07/20 23:05:46 by fbafica          ###   ########.fr       */
+/*   Updated: 2021/11/12 14:21:32 by fbafica          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdarg.h>
 #include "ft_printf.h"
 
 static	int	print_wo_specifier(const char *c)

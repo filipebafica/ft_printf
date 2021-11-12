@@ -6,13 +6,11 @@
 /*   By: fbafica <fbafica@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/17 00:19:42 by fbafica           #+#    #+#             */
-/*   Updated: 2021/07/20 23:04:03 by fbafica          ###   ########.fr       */
+/*   Updated: 2021/11/12 14:21:41 by fbafica          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <unistd.h>
-#include <stdlib.h>
 
 static	void	fill_hex(char **hexadecimal_num, unsigned int decimal_num, \
 	char specifier, int len)
