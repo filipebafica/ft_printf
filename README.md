@@ -1,5 +1,5 @@
 # ft_printf
-An implementation of libc's printf function.
+An implementation of libc's printf and dprintf functions.
 
 ## 🗂 Table of Contents
 * [About](#-about)
@@ -25,6 +25,7 @@ The function returns:
 
 Prototype: 
 * `int	ft_printf(const char *format, ...)`
+* `int	ft_dprintf(int fd, const char *format, ...)`
 
 This project is part of 42 École/ 42 SP curriculum.\
 Topics such as variadic functions and data types manipulation were addressed.
@@ -48,13 +49,18 @@ $ ./a.out
 Call the function passing a string and specifiers as seen below:
 ```
 #include "ft_printf.h"
+#include <fcntl.h>
 
 int	main(void)
 {
 	char	*var;
-
+	int		fd;
+	
+	fd = open("./my_file", O_RDWR | O_CREAT | O_APPEND, 0777);
 	var = "Hello World";
-	ft_printf("Print this: %s\n", var);
+	ft_printf("Print in standard out: %s\n", var);
+	ft_dprintf(fd, "Print in a given file descriptor: %s\n", var);
+	close(fd);
 	return (0);
 }
 ```

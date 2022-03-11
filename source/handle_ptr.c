@@ -6,7 +6,7 @@
 /*   By: fbafica <fbafica@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/17 00:19:42 by fbafica           #+#    #+#             */
-/*   Updated: 2021/11/12 14:22:00 by fbafica          ###   ########.fr       */
+/*   Updated: 2022/03/11 16:45:33 by fbafica          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,22 @@ static	int	get_hex_len(size_t decimal_num)
 		decimal_num /= 16;
 	}
 	return (i);
+}
+
+int	dhandle_ptr(int fd, size_t decimal_num)
+{
+	char	*hexadecimal_num;
+	int		len;
+
+	len = get_hex_len(decimal_num);
+	fill_hex(&hexadecimal_num, decimal_num, len);
+	dhandle_s(fd, "0x");
+	if (decimal_num == 0)
+		len += dhandle_nbr(fd, 0);
+	else
+		dhandle_s(fd, hexadecimal_num);
+	free(hexadecimal_num);
+	return (len + 2);
 }
 
 int	handle_ptr(size_t decimal_num)

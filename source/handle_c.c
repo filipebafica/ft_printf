@@ -6,11 +6,17 @@
 /*   By: fbafica <fbafica@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/16 22:11:28 by fbafica           #+#    #+#             */
-/*   Updated: 2021/11/12 14:21:36 by fbafica          ###   ########.fr       */
+/*   Updated: 2022/03/11 16:40:25 by fbafica          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+int	dhandle_c(int fd, char c)
+{
+	write(fd, &c, 1);
+	return (1);
+}
 
 int	handle_c(char c)
 {
