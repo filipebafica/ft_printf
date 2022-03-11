@@ -54,7 +54,7 @@ Call the function passing a string and specifiers as seen below:
 int	main(void)
 {
 	char	*var;
-	int		fd;
+	int	fd;
 	
 	fd = open("./my_file", O_RDWR | O_CREAT | O_APPEND, 0777);
 	var = "Hello World";
